@@ -1,4 +1,10 @@
-
+.container {
+    border: 1px solid grey;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 15px;
+    overflow: auto;
+}
 header {
     align-content: center;
     background-color: darkslategray;
@@ -10,14 +16,17 @@ h2 {
     color: white;
     text-align: center;
 }
-
+ h3 {
+     margin-top: 10px;
+ }
 .row {
     /* margin-left: 0;
     margin-right: 0; */
     margin: auto;   
 }
 
-.forecastTable {
+.forecast {
+    margin-top: 25px;
 }
 
 .city-return {
@@ -29,4 +38,29 @@ h2 {
 
 .list-group {
     margin-top: 25px;
+}
+
+.city-results > .list-group-item {
+    border: none;
+    padding-left: 0;
+}
+
+.forecastResults {
+    Margin-top: 30px;
+}
+
+#city-info {
+    border: 1px solid gray;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+ 
+.search {
+    background-color: rgb(238, 237, 237)
+}
+
+.forecastBox {
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
 }

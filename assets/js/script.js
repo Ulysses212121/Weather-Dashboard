@@ -10,7 +10,7 @@ $("#city-search").on("click", function() {
 
     $.ajax({
       url: queryURL,
-      method: "GET"
+      method: "GET",
     })
       .then(function(response) {
         console.log(response);
@@ -24,7 +24,7 @@ $("#city-search").on("click", function() {
 
 
 
-  
+
 //   function initCoords() {
 //     if (navigator.geolocation) {
 //       navigator.geolocation.getCurrentPosition(initialize, locationError);
