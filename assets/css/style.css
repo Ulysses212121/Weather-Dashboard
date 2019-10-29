@@ -1,0 +1,32 @@
+
+header {
+    align-content: center;
+    background-color: darkslategray;
+    padding: 5px;
+    width: 100%;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+.row {
+    /* margin-left: 0;
+    margin-right: 0; */
+    margin: auto;   
+}
+
+.forecastTable {
+}
+
+.city-return {
+    margin: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+
+}
+
+.list-group {
+    margin-top: 25px;
+}
