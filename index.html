@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div>
+        <div class="container">
+            <header>
+                <H2>Weather Dashboard</H2>
+            </header>
+            <div class="main-content">
+                <div class="row">
+                    <div class="column-md-4">
+                        <table class="table table-borderless">
+                            <thead>
+                                <th>Search for a City:</th>
+
+                                <tr>
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="City" aria-label="city"
+                                            aria-describedby="city-search">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary" type="button"
+                                                id="city-search">City</button>
+                                        </div>
+                                    </div>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="column-md-8">
+                        <table class="table table-bordered">
+                            <thead>
+                                <th>Atlanta</th>
+                            </thead>
+                            <tbody>
+                                <tr>Temperature:</tr>
+                                <tr>Humidity:</tr>
+                                <tr>Wind Speed:</tr>
+                                <tr>UV Index:</tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-borderless">
+                            <thead>
+                                <th>5-day Forecase</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="day-1">
+                                        <table>
+                                            <th></th>
+                                            <tr></tr>
+                                            <tr></tr>
+                                            <tr></tr>
+                                        </table>
+                                    </td>
+                                    <td id="day-2">
+                                        <table>
+                                            <th></th>
+                                            <tr></tr>
+                                            <tr></tr>
+                                            <tr></tr>
+                                        </table>
+                                    </td>
+                                    <td id="day-3">
+                                        <table>
+                                            <th></th>
+                                            <tr></tr>
+                                            <tr></tr>
+                                            <tr></tr>
+                                        </table>
+                                    </td>
+                                    <td id="day-4">
+                                        <table>
+                                            <th></th>
+                                            <tr></tr>
+                                            <tr></tr>
+                                            <tr></tr>
+                                        </table>
+                                    </td>
+                                    <td id="day-5">
+                                        <table>
+                                            <th></th>
+                                            <tr></tr>
+                                            <tr></tr>
+                                            <tr></tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
