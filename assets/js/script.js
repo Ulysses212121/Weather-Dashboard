@@ -1,9 +1,4 @@
-// var humidity = $("#humidity").text()
-
-// getCurrentPosition();
-
-// console.log(position.coords);
-
+// variables for forecast Date and Month
 var tomorrow = new Date();
 tomorrow.setDate(tomorrow.getDate() + 1);
 var tomDate1 = tomorrow.getDate();
@@ -29,7 +24,7 @@ nextDay5.setDate(nextDay5.getDate() + 5);
 var tomDate5 = nextDay5.getDate();
 var tomMonth5 = nextDay5.getMonth() + 1;
 
-
+// variable for full date input
 var today = new Date();
 var date = '(' + (today.getMonth() + 1) + '/' + today.getDate() + '/' + today.getFullYear() + ")";
 var date1 = tomMonth1 + '/' + tomDate1 + '/' + today.getFullYear();
@@ -37,12 +32,25 @@ var date2 = tomMonth2 + '/' + tomDate2 + '/' + today.getFullYear();
 var date3 = tomMonth3 + '/' + tomDate3 + '/' + today.getFullYear();
 var date4 = tomMonth4 + '/' + tomDate4 + '/' + today.getFullYear();
 var date5 = tomMonth5 + '/' + tomDate5 + '/' + today.getFullYear();
-// console.log(a);
 
+// search city event
 $("#city-search").on("click", function () {
+  if ($("#city-input").val() == "") {
+    return
+  } 
+
+
   var city = "q=" + $("#city-input").val();
   var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
     city + "&APPID=fc7a4c55d406dbfc0c17bcfda644fb7e";
+
+  var liCity = $("<li>").text($("#city-input").val());
+  liCity.attr("class", "list-group-item");
+  $("#city-list").prepend(liCity);
+
+  var newCity = $("<h4>").text("5-Day Forecast");
+  $(".forecastResults").prepend(newCity);
+  console.log(newCity.text());
 
   $.ajax({
     url: queryURL,
@@ -223,6 +231,7 @@ function resetInfo() {
   $(".forecastBox").empty();
   $(".city-name").empty();
   $(".city-results").empty();
+  $("h4").remove();
 
 }
 
